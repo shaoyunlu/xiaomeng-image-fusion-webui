@@ -1,6 +1,6 @@
 <template>
     <router-view></router-view>
-    <div class="fusion-index-button" @click="handleClick" v-show="g_fusion_index_button_show"></div>
+    <div class="fusion-index-button" @click="handleClick" v-show="g_fusion_index_button_show"><span>首页</span></div>
 </template>
 
 <script>
@@ -33,7 +33,7 @@ export default defineComponent({
     .fusion-index-button{
         position: fixed;
         width: 3%;
-        padding-top: 3%;
+        aspect-ratio: 1 / 1;
         left : 1%;
         top : 1%;
         background-color: darkcyan;

@@ -1,7 +1,7 @@
 <template>
     <div class="fusion-index">
         <div class="__start center">
-            <div class="__circle_button" @click="handleClick"></div>
+            <div class="__circle_button" @click="handleClick">开始</div>
         </div>
     </div>
 </template>
@@ -39,7 +39,7 @@ export default defineComponent({
 
             .__circle_button{
                 width: 5%;
-                padding-top: 5%;
+                aspect-ratio: 1 / 1;
                 position: relative;
                 background-color: #3498db;
             }
