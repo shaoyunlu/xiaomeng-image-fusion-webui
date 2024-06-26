@@ -1,5 +1,8 @@
 <template>
-    <div class="fusion-index">
+    <div class="fusion-photograph">
+        <div class="__camera_wrap center">
+            <div class="__camera"></div>
+        </div>
         <div class="__start center">
             <div class="__circle_button" @click="handleClick"></div>
         </div>
@@ -8,34 +11,37 @@
 
 <script>
 import {defineComponent} from 'vue'
-import { useRouter} from 'vue-router';
 export default defineComponent({
     name:"",
     setup(props ,context) {
-
-        const router = useRouter()
-
-        const handleClick = ()=>{
-            router.push({path : '/photographVue'})
-        }
-
-        return {handleClick}
+        return {}
     }
 })
 </script>
 
 <style lang="less">
-    .fusion-index{
+    .fusion-photograph{
         position: relative;
         width : 100%;
         height: 100%;
         overflow: hidden;
         background-color: antiquewhite;
 
+        .__camera_wrap{
+            position: absolute;
+            width: 100%;
+            top: 10vh;
+            .__camera{
+                width: 50vw;
+                height: 28.125vw;
+                background-color: cadetblue;
+            }
+        }
+
         .__start{
             position: absolute;
             width: 100%;
-            bottom: 30vh;
+            bottom: 10vh;
 
             .__circle_button{
                 width: 5%;
@@ -44,7 +50,5 @@ export default defineComponent({
                 background-color: #3498db;
             }
         }
-
-        
     }
 </style>

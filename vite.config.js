@@ -7,7 +7,8 @@ import legacy from '@vitejs/plugin-legacy'
 export default defineConfig({
   resolve: {
     alias: {
-      'page': resolve(__dirname, 'src/page')
+      'page': resolve(__dirname, 'src/page'),
+      'util': resolve(__dirname, 'src/util')
     }
   },
   plugins: [
